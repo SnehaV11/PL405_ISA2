@@ -1,18 +1,12 @@
 
-public class MainApp {
+public class MainApp{
 	
 	public static void main(String[] args) {
+		float bookPrice = 501;
 		
-		System.out.println("The number1 is 5");
-		System.out.println("The number2 is 5");
+		Book bk = new Book();
+		bk.setBookPrice(bookPrice);
 		
-		Operation addition = new Operation();
-		addition.sum();
-		
-		Operation multiply = new Operation();
-		multiply.multiplication();
-		
-		Operation minus = new Operation();
-		minus.difference();
+		bk.calculateDiscount();
 	}
 }
